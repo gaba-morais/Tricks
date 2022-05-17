@@ -65,8 +65,8 @@ async Task Problema()
 
 async Task Solucao()
 {
-    // Com Dictionary também funcionaria, veja mais sobre
-    // os beneficios do ConcurrentDictionary em: https://docs.microsoft.com/en-us/dotnet/standard/collections/thread-safe/when-to-use-a-thread-safe-collection#concurrentdictionary-vs-dictionary
+    // Com Dictionary também funciona, veja mais sobre
+    // os benefícios do ConcurrentDictionary em: https://docs.microsoft.com/en-us/dotnet/standard/collections/thread-safe/when-to-use-a-thread-safe-collection#concurrentdictionary-vs-dictionary
     var itens = new ConcurrentDictionary<int, Item>();
 
     itens.TryAdd(0, new Item());
